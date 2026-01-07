@@ -1,0 +1,17 @@
+*{
+    font-style: italic;
+}
+
+body{
+background-color:  #1B3C53;
+}
+
+#headingOne{
+    color: #E3E3E3;
+}
+#headingTwo{
+    color: aliceblue;
+}
+.myclass{
+ color: #96a4ae;
+}

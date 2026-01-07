@@ -1,0 +1,23 @@
+h1{
+    color: coral;
+}
+
+p{
+    color: blueviolet;
+}
+/*use google color pikker use hex and rgb values of it*/
+h2{
+    color: rgb(250,0,0);
+}
+h3{
+    color: #e620d5;
+}
+button{
+
+    color: black;
+    background-color: yellow;
+}
+
+body{
+    background-color: aqua;
+}

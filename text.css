@@ -1,0 +1,25 @@
+p{
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+    text-decoration: red underline;
+    font-weight: bolder;
+}
+#headingO
+{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 200;
+
+}
+#one{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#two{
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+}

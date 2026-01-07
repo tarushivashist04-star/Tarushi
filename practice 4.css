@@ -1,0 +1,24 @@
+div{
+            height: 150px;
+            width: 150px;
+            background-image: url("https://picsum.photos/1200/800");
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: fixed;
+            top: 20px;   
+            right: 0;
+            z-index: 1000;
+            border: 2px solid #fff;
+            border-radius: 8px 0 0 8px;
+}
+body{
+    font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            height: 2000px;
+}
+
