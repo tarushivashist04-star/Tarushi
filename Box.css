@@ -2,4 +2,28 @@ div{
     height: 100px;
     width: 150px;
     background-color: pink;
+     border-width: 2px;
+     border-style: solid;
+     border-radius: 15px;
+     padding-left: 25px;
+
+
+}
+h1{
+    height: 200px;
+    width: 210px;
+    background-color: blueviolet;
+}
+
+h2{
+    border-width: 10px;
+    border-style: dashed;
+    border-color: red;
+    text-align: center;
+    padding: 50px;
+}
+
+button{
+    color: black;
+    background-color: yellow;
 }

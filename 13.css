@@ -1,0 +1,31 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    position: static;/*z ind3x cant be fixed*/
+    background-color: aqua;
+
+}
+
+#box2{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    background-color: blue;
+    z-index: 5;
+}
+#box3{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    background-color: blueviolet;
+}
+#box4{
+    position: fixed;
+    top: 50px;
+    background-color: brown;
+}
+

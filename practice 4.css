@@ -10,7 +10,7 @@ div{
             font-weight: bold;
             position: fixed;
             top: 20px;   
-            right: 0;
+            right: 0px;
             z-index: 1000;
             border: 2px solid #fff;
             border-radius: 8px 0 0 8px;

@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#cointainer{
+    width: 800px;
+    height: 200px;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: aquamarine;
+}
+
+#box3{
+    background-color: bisque;
+}
+#box4{
+    background-color: blueviolet;
+}
+#box5{
+    background-color: tomato;
+}
