@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #c77dff);
+}
+
+/* Calculator box */
+#Calculator {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff0f6;
+  box-shadow: 0 20px 40px rgba(123, 44, 191, 0.3);
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  font-size: 26px;
+  text-align: right;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffe5ec, #f3d9fa);
+  color: #4a1c6f;
+  outline: none;
+}
+
+/* Button grid */
+#button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons */
+.calbutton {
+  height: 55px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  background: #f3d9fa;
+  color: #4a1c6f;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.calbutton:hover {
+  background: #eebefa;
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.calbutton:active {
+  transform: scale(0.95);
+}
+
+/* Operator buttons */
+.calbutton:nth-child(4n) {
+  background: #ffb3c6;
+  color: #6a040f;
+}
+
+.calbutton:nth-child(4n):hover {
+  background: #ff8fab;
+}
+
+/* Equals button */
+.calbutton:nth-last-child(3) {
+  background: #cdb4db;
+  color: #3c096c;
+}
+
+.calbutton:nth-last-child(3):hover {
+  background: #b392f0;
+}
+
+/* Clear button */
+.calbutton:first-child {
+  background: #ffcad4;
+  color: #800f2f;
+}
+
+.calbutton:first-child:hover {
+  background: #ffafcc;
+}
