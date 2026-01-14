@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stone Paper Scissors</title>
+  <link rel="stylesheet" href="stone.css">
+</head>
+<body>
+
+  <h1>Stone Paper Scissors Game</h1>
+
+  <button onclick="playGame('Stone')">Stone</button>
+  <button onclick="playGame('Paper')">Paper</button>
+  <button onclick="playGame('Scissors')">Scissors</button>
+
+  <script>
+    let computerChoice = '';
+
+    function generateComputerChoice() {
+      let randomNumber = Math.random() * 3;
+
+      if (randomNumber <= 1) {
+        computerChoice = 'Stone';
+      } else if (randomNumber <= 2) {
+        computerChoice = 'Paper';
+      } else {
+        computerChoice = 'Scissors';
+      }
+    }
+
+    function playGame(userChoice) {
+      generateComputerChoice();
+      let resultMsg = '';
+
+      if (userChoice === computerChoice) {
+        resultMsg = "It's a tie";
+      } else if (
+        (userChoice === 'Stone' && computerChoice === 'Scissors') ||
+        (userChoice === 'Paper' && computerChoice === 'Stone') ||
+        (userChoice === 'Scissors' && computerChoice === 'Paper')
+      ) {
+        resultMsg = 'User won';
+      } else {
+        resultMsg = 'Computer won';
+      }
+
+      alert(
+        `You chose ${userChoice}. Computer chose ${computerChoice}. ${resultMsg}.`
+      );
+    }
+  </script>
+
+</body>
+</html>
+
