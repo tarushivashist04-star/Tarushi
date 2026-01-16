@@ -15,6 +15,9 @@ setInterval(() => { //repetation of that task
     1sec=6 */
 
     hour.style.transform = `rotate(${hrotation}deg)`;
+    //rotate is for rotation
+    //css tranform prop
+    //deg degreee
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
 }, 1000);

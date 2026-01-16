@@ -23,6 +23,7 @@ body {
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(10px);
+  /*blur background behind the box*/
   color: white;
 }
 
@@ -63,7 +64,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* Floating label */
+/* Floating label  for focused and filled*/
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*width&height include padding and border*/
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
@@ -11,6 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  /*horizontal*/
   align-items: center;
   background: linear-gradient(135deg, #ff9a9e, #c77dff);
 }
@@ -22,6 +24,7 @@ body {
   border-radius: 20px;
   background: #fff0f6;
   box-shadow: 0 20px 40px rgba(123, 44, 191, 0.3);
+  /*horizontal  vertical blur */
   border: 1px solid rgb(187, 183, 183);
 }
 
@@ -47,7 +50,7 @@ body {
   gap: 12px;
 }
 
-/* Buttons */
+/* Buttons default 1,3,+,-,7,/,9,0,.*/
 .calbutton {
   height: 55px;
   font-size: 18px;
@@ -66,12 +69,12 @@ body {
   transform: translateY(-2px);
 }
 
-/* Click effect */
+/* Click effect shrink */
 .calbutton:active {
   transform: scale(0.95);
 }
 
-/* Operator buttons (every 3rd button) */
+/* Operator buttons every 3rd 2,4,6,8 */
 .calbutton:nth-child(3n) {
   background: #ffb3c6;
   color: #6a040f;
@@ -81,31 +84,31 @@ body {
   background: #ff8fab;
 }
 
-/* Equals button */
+/* Equals button last 3rd */
 .calbutton:nth-last-child(3) {
   background: #cdb4db;
   color: #3c096c;
 }
-
+/*for = */
 .calbutton:nth-last-child(3):hover {
   background: #b392f0;
 }
 
-/* Clear button */
+/* Clear button (c)*/
 .calbutton:first-child {
   background: #ffcad4;
   color: #800f2f;
 }
-
+/*hover c button*/
 .calbutton:first-child:hover {
   background: #ffafcc;
 }
 
 /* Center 0 and . buttons */
 .zero {
-  grid-column: 1 / 3;   /* takes 2 columns */
+  grid-column: 1 / 3;   /*takes 2 columns*/
 }
 
 .dot {
-  grid-column: 3 / 4;   /* stays in last column */
+  grid-column: 3 / 4;   /*stays in last column*/
 }

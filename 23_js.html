@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Object References</title>
+</head>
+<body>
+  <script>
+    let a=4;
+    let b=a;
+    console.log(`a=${a},b=${b}`);
+    a=7;
+    console.log(`a=${a},b=${b}`);
+
+    let x ={num:6};
+    let y =x;
+    console.log(`x=${x.num},b=${y.num}`);
+    x.num=9;
+    console.log(`x=${x.num},b=${y.num}`);
+      
+    let p={pop:'Hello'};
+    let q={pop:'Hello'};
+    console.log(p==q);
+    /*false bc pis reference to hello ana p and q have memory allocation/address*/
+
+  </script>
+
+</body>
+</html>

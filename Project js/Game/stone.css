@@ -4,8 +4,9 @@ body {
   padding: 0;
   height: 100vh;
   background: linear-gradient(to right, #74ebd5, #acb6e5);
-  display: flex;
-  flex-direction: column;
+  /*left to right*/
+  display: flex;/*easy alingment*/
+  flex-direction: column;/*vertically top to bottow*/
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
@@ -16,6 +17,7 @@ h1 {
   color: #333;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px white;
+  /*right down blur*/
 }
 
 /* Button style */
@@ -30,5 +32,5 @@ button {
   cursor: pointer;
   background-color: white;
   color: #333;
-  box-shadow: 0 5px 1
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.2)
 }

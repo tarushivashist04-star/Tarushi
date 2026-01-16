@@ -10,45 +10,82 @@
   <h1>Stone Paper Scissors Game</h1>
 
   <button onclick="playGame('Stone')">Stone</button>
+  <!--playgame function call , stone user choice-->
   <button onclick="playGame('Paper')">Paper</button>
   <button onclick="playGame('Scissors')">Scissors</button>
 
-  <script>
-    let computerChoice = '';
-
-    function generateComputerChoice() {
-      let randomNumber = Math.random() * 3;
-
-      if (randomNumber <= 1) {
-        computerChoice = 'Stone';
-      } else if (randomNumber <= 2) {
-        computerChoice = 'Paper';
-      } else {
-        computerChoice = 'Scissors';
-      }
+ <script>
+  
+  // Class to store game score
+  class Score {
+    constructor() {
+      this.win = 0;
+      this.loss = 0;
+      this.tie = 0;
     }
 
-    function playGame(userChoice) {
-      generateComputerChoice();
-      let resultMsg = '';
-
-      if (userChoice === computerChoice) {
-        resultMsg = "It's a tie";
-      } else if (
-        (userChoice === 'Stone' && computerChoice === 'Scissors') ||
-        (userChoice === 'Paper' && computerChoice === 'Stone') ||
-        (userChoice === 'Scissors' && computerChoice === 'Paper')
-      ) {
-        resultMsg = 'User won';
-      } else {
-        resultMsg = 'Computer won';
-      }
-
-      alert(
-        `You chose ${userChoice}. Computer chose ${computerChoice}. ${resultMsg}.`
-      );
+    addWin() {
+      this.win++;
     }
-  </script>
+
+    addLoss() {
+      this.loss++;
+    }
+
+    addTie() {
+      this.tie++;
+    }
+  }
+
+  // Create object of Score class
+  const score = new Score();
+
+  let computerChoice = '';
+
+  function generateComputerChoice() {
+    let randomNumber = Math.random() * 3;
+
+    if (randomNumber <= 1) {
+      computerChoice = 'Stone';
+    } else if (randomNumber <= 2) {
+      computerChoice = 'Paper';
+    } else {
+      computerChoice = 'Scissors';
+    }
+  }
+
+  function playGame(userChoice) {
+    generateComputerChoice();
+    let resultMsg = '';
+
+    if (userChoice === computerChoice) {
+      resultMsg = "It's a tie";
+      score.addTie();
+    } 
+    else if (
+      (userChoice === 'Stone' && computerChoice === 'Scissors') ||
+      (userChoice === 'Paper' && computerChoice === 'Stone') ||
+      (userChoice === 'Scissors' && computerChoice === 'Paper')
+    ) {
+      resultMsg = 'User won';
+      score.addWin();
+    } 
+    else {
+      resultMsg = 'Computer won';
+      score.addLoss();
+    }
+
+    alert(
+      `You chose ${userChoice}
+Computer chose ${computerChoice}
+${resultMsg}
+
+Wins: ${score.win}
+Losses: ${score.loss}
+Ties: ${score.tie}`
+    );
+  }
+</script>
 
 </body>
 </html>
