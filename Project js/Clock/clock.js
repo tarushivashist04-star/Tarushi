@@ -1,4 +1,5 @@
-setInterval(() => { //repetation of that task
+setInterval(() => 
+    { //repetation of that task
     d = new Date();
     htime = d.getHours();
     mtime = d.getMinutes();
@@ -17,7 +18,7 @@ setInterval(() => { //repetation of that task
     hour.style.transform = `rotate(${hrotation}deg)`;
     //rotate is for rotation
     //css tranform prop
-    //deg degreee
+   //deg degreee
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
 }, 1000);

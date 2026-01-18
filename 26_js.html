@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Practice</title>
+</head>
+<body>
+
+<script>
+  let product = {
+    name: 'jeans',
+    size: 'L',
+    fit: 'Slim fit',
+    'delivery-time': 'Same day delivery',
+  };
+
+  console.log(product['delivery-time']);
+
+  let obj = {
+    message: 'Good-Job',
+    status: 'Complete',
+  };
+
+  console.log(obj);
+
+  // Destructuring
+  let { message, status } = obj;
+  console.log(message);
+  console.log(status);
+
+  function isIdenticalProduct(product1, product2) {
+
+    // type + null check
+    if (
+      typeof product1 !== 'object' || product1 === null ||
+      typeof product2 !== 'object' || product2 === null
+    ) {
+      return false;
+    }
+
+    // same reference
+    if (product1 === product2) {
+      return true;
+    }
+
+    // value comparison
+    if (
+      product1.name === product2.name &&
+      product1.size === product2.size &&
+      product1.fit === product2.fit
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  let product2 = {
+    name: 'jeans',
+    size: 'M',
+    fit: 'Slim fit',
+    'delivery-time': 'Same day delivery',
+  };
+
+  let product3 = {
+    name: 'jeans',
+    size: 'M',
+    fit: 'Slim fit',
+    'delivery-time': 'Same day delivery',
+  };
+
+  console.log(isIdenticalProduct(product, product2)); // false
+  console.log(isIdenticalProduct(product, product));  // true
+  console.log(isIdenticalProduct(product, ''));       // false
+  console.log(isIdenticalProduct(product2, product3)); // true
+</script>
+
+</body>
+</html>

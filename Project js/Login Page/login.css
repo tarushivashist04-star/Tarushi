@@ -48,14 +48,14 @@ body {
   color: white;
 }
 
-.input-box label {
+ .input-box label {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  
   color: #ddd;
-  transition: 0.3s;
-}
+  
+} 
 
 .input-box i {
   position: absolute;
