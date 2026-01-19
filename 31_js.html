@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>JSON</title>
+  <title>JSON localstorage</title>
 </head>
 <body>
   <script>
@@ -14,12 +14,21 @@
         noOfReviews: 453,
       },
     };
-
+    //setItem /key-value
+    //local storage support only string
     localStorage.setItem('Name', 'Tarushi vashist');
+    //setItem set the value
     localStorage.setItem('Price', '87656');
     console.log(localStorage.getIte('Name'));
    localStorage.setItem('product', JSON.stringify(product));
+   //getItem can get the value
     console.log(localStorage.getItem('product'));
+
+    //localStorage.removeItem('Price');
+    //remove particular thing
+
+    //localStorage.clear();
+    //remove whole 
 
 
 

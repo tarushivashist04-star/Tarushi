@@ -5,6 +5,8 @@
 </head>
 <body>
   <script>
+    //javascipt object is by default  jason object
+    //atring easy version to transport over network
     let product = {
        name: 'TShirt',
        price: 789,
@@ -13,13 +15,18 @@
          noOfReviews: 453,
      },
      };
+     //type
      console.log(typeof product);
+     //product print
      console.log(product);
+     //json stringify me convert
      let str = JSON.stringify(product);
+     //again type
      console.log(typeof str);
+     ///print str
      console.log(str);
 
-     
+     //again string to object
      let newProduct = JSON.parse(str);
      console.log(typeof newProduct);
      console.log(newProduct);
